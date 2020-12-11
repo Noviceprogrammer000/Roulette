@@ -1,0 +1,64 @@
+*{margin : 0;}
+html{
+    
+    background-image:url(../bilder/field.jpg); background-size:cover;   background-repeat: no-repeat;}
+
+
+
+
+.bild, .bild2{ 
+    
+    border-radius: 400px; background: #ff3333
+; height: 150px; width: 140px;  font-style:oblique; font-size: 1.5em; align-self: flex-start; margin-left: 60px; border: 0.5px solid black;
+cursor: pointer;}
+
+
+#Main-flexbox-wrapper, body, html{   
+    !important; height: 100%; width: 100%; display: flex; flex-direction: column; align-items: center; 
+}
+
+
+.top-flex{ 
+background-color: lightgrey;
+    height: 13%;
+    opacity: .9;
+    width: 100%;
+}
+.move{
+    
+    float: right; margin: 20px 10px 0px 0px;}
+.move li{
+    
+    width: 100px; height: 30px; display: inline-flex; font-size: 1.2em; font-family: bold;}
+
+
+#logs-flex{ 
+height: 60%;
+width: 20%;
+    border: 1px solid grey;
+  background-color: whitesmoke;
+    align-self:flex-end;
+    margin: 40px 20px 0px 0px;
+border-radius: 10px;
+    
+    
+}
+
+
+#stake-bet-flex{
+align-self :flex-end; margin-right: 90px; height: 30px; width: 200px; border: 1px solid black; border-radius: 10px;
+}
+
+.betting-flex{ 
+    
+    width: 200px; height: 30px; border-radius: 3px; margin: 0px 0px 20px 20px ;}
+
+.input-text{
+    
+    margin-left: 50px;}
+.resize{
+    
+    height: 500px; width: 500px; position: absolute; top: 100px; left: 480px}
+.pointer{
+    margin: 5px 0px 0px 255px; z-index: 10;
+}
