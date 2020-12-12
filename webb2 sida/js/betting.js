@@ -10,78 +10,6 @@ for (i = 0; i < numbers.length; i++) {
   numbers[i] * 18;
 }
 
-
-/* this works */
-(function() {
-  const wheel = document.querySelector('.resize');
-  const startButton = document.querySelector('.bild');
-  let deg = 0;
-
-  startButton.addEventListener('click', () => {
-
-    startButton.style.pointerEvents = 'none';
-    
-    deg = Math.floor(20 + Math.random() * 360);
-    
-    wheel.style.transition = 'all 2s ease-out';
-   
-    wheel.style.transform = `rotate(${deg}deg)`;
- 
-    wheel.classList.add('blur');
-  });
-
-  wheel.addEventListener('transitionend', () => {
-
-
-    startButton.style.pointerEvents = 'auto';
-  
-    wheel.style.transition = 'none';
-  
-    const actualDeg = deg % 360;
-
-    wheel.style.transform = `rotate(${actualDeg}deg)`;
-      console.log(deg);
-      
-      
-  });
-})();
-/* this works */
-
-
-
-/* this works */
-
-
-/* this works */
-function myFunction(){
-
-document.getElementById('log-sub').innerHTML = " You betted " + valuebetted + " You can no longer change your bet, goodluck!";
-
-}
-
-
-/* needs work only runs once!
-function SaveFunction(){
-  var set = document.querySelector('.betting-flex').value;
-    if(set <= ko){
-console.log("you saved " + set);
-valuebetted = set;
-document.querySelector('.betting-flex').value = '';
-logging.innerHTML = " You betted " + valuebetted;
-x.innerHTML = ko - set;
-        return;
-}
- else{
-    logging.value = '';
-    alert("insuffcient funds")
-     
- }
-return;}
-
-
-*/
-
-/* saved wheel "just incase"
 (function() {
   const wheel = document.querySelector('.resize');
   const startButton = document.querySelector('.bild');
@@ -115,4 +43,36 @@ return;}
       
       
   });
-})();*/
+})();
+
+
+/* this works */
+function myFunction(){
+
+document.getElementById('log-sub').innerHTML = " You betted " + valuebetted + " You can no longer change your bet, goodluck!";
+
+}
+
+
+/* needs work only runs once!
+function SaveFunction(){
+  var set = document.querySelector('.betting-flex').value;
+    if(set <= ko){
+console.log("you saved " + set);
+valuebetted = set;
+document.querySelector('.betting-flex').value = '';
+logging.innerHTML = " You betted " + valuebetted;
+x.innerHTML = ko - set;
+        return;
+}
+ else{
+    logging.value = '';
+    alert("insuffcient funds")
+     
+ }
+return;}
+
+
+*/
+
+ 
